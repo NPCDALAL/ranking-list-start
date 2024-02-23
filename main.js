@@ -37,7 +37,9 @@ function btnClicked() {
 
 // FUNCTIONS TO DEFINE
 function drawRankList() {
-  console.log("Draw rankList");
+  outputEl.innerHTML = "<h2>Display All  Ranks<h2>"
+  for (let i = 0; i < rankList.length; i++)
+  outputEl.innerHTML += `<h4>${rankList[i]}:</h4>`
 }
 
 function addItem() {
@@ -66,4 +68,5 @@ function edit() {
 
 function empty() {
   console.log("Empty");
+  [];
 }
