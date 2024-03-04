@@ -37,9 +37,14 @@ function btnClicked() {
 
 // FUNCTIONS TO DEFINE
 function drawRankList() {
-  outputEl.innerHTML = "<h2>Display All  Ranks<h2>"
-  for (let i = 0; i < rankList.length; i++)
-  outputEl.innerHTML += `<h4>${rankList[i]}:</h4>`
+  let i = 1
+  outputEl.innerHTML = "";
+  outputEl.innerHTML = "<h2>Display All  Ranks<h2>";
+
+  for (let rank of rankList) {
+    outputEl.innerHTML += `<h4>${i} ${rank}:</h4>`;
+    i++;
+  }
 }
 
 function addItem() {
