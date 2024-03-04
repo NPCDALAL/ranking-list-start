@@ -37,17 +37,18 @@ function btnClicked() {
 
 // FUNCTIONS TO DEFINE
 function drawRankList() {
-  let i = 1
+  let i = 1;
   outputEl.innerHTML = "";
   outputEl.innerHTML = "<h2>Display All  Ranks<h2>";
 
   for (let rank of rankList) {
-    outputEl.innerHTML += `<h4>${i} ${rank}:</h4>`;
+    outputEl.innerHTML += `<h4>${i} ${rank}</h4>`;
     i++;
   }
 }
 
 function addItem() {
+  rankList.splice(index, howManyToRemove,);
   console.log("Add Item");
 }
 
